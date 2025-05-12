@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Multimedia Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .marquee {
+      background-color: #f2f2f2;
+      padding: 10px;
+      color: #d6336c;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .marquee span {
+      display: inline-block;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    iframe, embed {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top News Marquee -->
+  <div class="marquee">
+    <span>🔴 I am Ram Prosad Sarker. From Adrik18....Department of ICT, MBSTU</span>
+  </div>
+
+  <!-- YouTube "Audio-like" Embed -->
+  <section>
+    <h2>🎧 Listen to Audio</h2>
+    <iframe width="350" height="100"
+      src="https://www.youtube.com/embed/YnvW9WTEdfw"
+      title="My Favorite Song"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- YouTube Video Embed -->
+  <section>
+    <h2>🎥 Watch Video</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/s5gMfQpzFhA"
+      title="My MBSTU"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- PDF Section -->
+  <section>
+    <h2>📄 View PDF</h2>
+    <embed src="Ecommerse.pdf" type="application/pdf" width="600" height="400">
+    <!-- Make sure this PDF file is in the same folder as the HTML file -->
+  </section>
+
+  <!-- Equation Section -->
+  <section>
+    <h2>📐 Mathematical Equation</h2>
+    <p>Here is the quadratic formula:</p>
+    <p>
+      x<sub>2</sub> = (b + √(b<sup>2</sup> - 4ac)) / 2a
+    </p>
+  </section>
+
+</body>
+</html>
